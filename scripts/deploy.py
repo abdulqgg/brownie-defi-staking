@@ -3,7 +3,7 @@ from scripts.helpful_scripts import get_account, get_contract
 from brownie import DappToken, TokenFarm, network, config
 from web3 import Web3
 
-KEPT_BALANCE = Web3.towei(100, "ether")
+KEPT_BALANCE = Web3.toWei(100, "ether")
 
 def deploy_token_farm_and_dapp_token():
     account = get_account()
