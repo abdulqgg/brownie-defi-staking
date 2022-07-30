@@ -17,4 +17,6 @@ def test_setPriceFeedContract():
 
     with pytest.raises(exceptions.VirtualMachineError):
         token_farm.setPriceFeedContract(dapp_token.address, price_feed_address, {"from": non_owner})
-        
+
+def test_issue_tokens():
+    pass
