@@ -32,7 +32,7 @@ contract TokenFarm is Ownable{
         tokenPriceFeedMapping[_token] = _priceFeed;
     }
 
-    function issueTokens(address _user) public onlyOwner {
+    function issueTokens() public onlyOwner {
         for(uint256 stakersIndex=0; stakersIndex < stakers.length; stakersIndex ++){
             address recipient = stakers[stakersIndex];
             uint256 userTotalValue = getUserTotalValue(recipient);
