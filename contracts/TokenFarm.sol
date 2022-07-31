@@ -19,7 +19,6 @@ contract TokenFarm is Ownable{
     // mapping token to price feed
     mapping(address => address) public tokenPriceFeedMapping;
 
-    address[] public test;
     address[] public stakers;
     address[] public allowedTokens;
 
