@@ -1,5 +1,5 @@
 import {useEthers} from "@usedapp/core"
-import {Button, makeStyles} from "@mui/material"
+import {Button, makeStyles} from "@material-ui/core"
 
 const useStyles = makeStyles((theme) => ({
     container: {
