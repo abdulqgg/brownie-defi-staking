@@ -9,12 +9,11 @@ import { Main } from './components/Main';
 function App() {
   return (
     <DAppProvider config={{
-      supportedChains: [ChainId.Kovan, ChainId.Rinkeby]
+      supportedChains: [ChainId.Kovan]
     }}>
       <Header />
       <Container maxWidth="md">
-        <div>Hi!</div>
-          <Main />
+        <Main />
       </Container>
     </DAppProvider>
   );
