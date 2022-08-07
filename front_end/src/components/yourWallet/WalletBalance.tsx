@@ -13,9 +13,8 @@ export const WalletBalance = ({token}: WalletBalanceProps) => {
     const { account } = useEthers()
     const tokenBalance = useTokenBalance(address, account)
     const formattedTokenBalance: number = tokenBalance ? parseFloat(formatUnits(tokenBalance, 18)) : 0
-    return (<BalanceMsg>
+    return (<BalanceMsg
         label={"Your un-staked ${name} balance"}
         tokenImgSrc={image}
-        amount={formattedTokenBalance}
-    </BalanceMsg>)
+        amount={formattedTokenBalance} />)
 }

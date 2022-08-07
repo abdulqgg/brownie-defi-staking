@@ -1,7 +1,7 @@
-import {makeStyles} from "material-ui/core"
+import { makeStyles } from "@material-ui/core"
 
 const useStyles = makeStyles(theme => ({
-    container : {
+    container: {
         display: "inline-grid",
         gridTemplateColumns: "auto auto auto",
         gap: theme.spacing(1),
@@ -21,15 +21,14 @@ interface BalanceMsgProps {
     tokenImgSrc: string
 }
 
-
-export const BalanceMsg = ({label, amount, tokenImgSrc}: BalanceMsgProps) => {
+export const BalanceMsg = ({ label, amount, tokenImgSrc }: BalanceMsgProps) => {
     const classes = useStyles()
 
     return (
-        <div className = {classes.container}>
+        <div className={classes.container}>
             <div>{label}</div>
-            <div className = {classes.amount} >{amount}</div>
-            <img className = {classes.tokenImg} src={tokenImgSrc} alt="token logo" />
+            <div className={classes.amount}>{amount}</div>
+            <img className={classes.tokenImg} src={tokenImgSrc} alt="token logo" />
         </div>
     )
 }
