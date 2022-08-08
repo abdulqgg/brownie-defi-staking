@@ -14,6 +14,10 @@ function App() {
       readOnlyUrls: {
         [Kovan.chainId]: getDefaultProvider('kovan'),
       },
+      notifications: {
+        expirationPeriod: 1000,
+        checkInterval: 1000
+      }
     }}>
       <Header />
       <Container maxWidth="md">
